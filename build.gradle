@@ -88,6 +88,7 @@ compileQuerydsl {
 
 //작동하는 build
 //dockerfile 같은 디렉토리에 있음
+//레퍼런스: https://medium.com/@gaemi/spring-boot-%EA%B3%BC-docker-with-jib-657d32a6b1f0
 docker {
 	name "dmc/cloud"
 	tags "${project.version}", "${BUILD_VERSION}"
@@ -114,7 +115,6 @@ docker {
 
 
 //jib 추가함
-//레퍼런스: https://medium.com/@gaemi/spring-boot-%EA%B3%BC-docker-with-jib-657d32a6b1f0
 //아직 진행 중.
 //jib {
 //	from {
